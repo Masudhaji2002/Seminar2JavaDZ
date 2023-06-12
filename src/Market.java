@@ -3,6 +3,8 @@ import java.util.List;
 
 public class Market implements I_MarketBehaviour, I_QueueBehaviour{
     Person person;
+
+
     private List<Person> queue;
     public Market(){
         queue = new ArrayList<>();
@@ -48,4 +50,5 @@ public class Market implements I_MarketBehaviour, I_QueueBehaviour{
     public void size() {
         System.out.println("Количество людей в очереди: " + queue.size());
     }
+
 }
